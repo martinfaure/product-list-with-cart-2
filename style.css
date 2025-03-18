@@ -20,7 +20,7 @@ main {
 	grid-template-rows: repeat(9, 1fr);
 }
 
-.Box > button {
+.Box > article {
 	border: 0;
 	background: none;
 	display: flex;
@@ -46,7 +46,7 @@ main {
 	margin: 0;
 }
 
-button > img {
+article > img {
 	height: 30vh;
 	width: 100%;
 	border-radius: 15px;
@@ -54,12 +54,16 @@ button > img {
 	transition: 1s;
 }
 
-button {
+article {
+	position: relative;
+}
+
+article {
 	border-radius: 15px;
 	transition: 0.25s;
 }
 
-button:hover {
+article:hover {
 	box-shadow: 0px 30px 75px 0px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 0px 30px 75px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 30px 75px 0px rgba(0, 0, 0, 0.75);
@@ -83,8 +87,22 @@ button:hover {
 	align-items: center;
 }
 
-button > .center {
+article > .center {
 	width: 100%;
+}
+
+.btn-add {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	bottom: 150px;
+	left: 70px;
+	border-radius: 25px;
+	padding: 10px;
+	background-color: white;
+	font-weight: 600;
+	border: solid 1px #ad8a85;
+	gap: 10px;
 }
 
 @media screen and (min-width: 700px) {
